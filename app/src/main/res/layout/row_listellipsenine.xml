@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listellipsenineRowModel" type="com.application.app.modules.enviodelocalizao.data.model.ListellipsenineRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowellipsenine"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearDocumento"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.41" android:layout_width="0dp" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameStackellipsenine"
+                android:layout_height="@dimen/_60pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_5pxh"
+                android:layout_width="@dimen/_60pxh" style="@style/groupStyleindigo_500cornerRadius">
+                <View
+                    android:background="@drawable/rectangle_bg_indigo_400_radius_30"
+                    android:id="@+id/viewEllipseNine"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_60pxh" android:layout_width="@dimen/_60pxh"/>
+                <ImageView android:id="@+id/imageFile"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginBottom="@dimen/_15pxv"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="@dimen/_28pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_file"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_file"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtDocumento"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listellipsenineRowModel.txtDocumento}"
+                style="@style/txtRobotomedium14_2" tools:text="@string/lbl_documento"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="end"
+            android:id="@+id/linearCmera"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_weight="0.39" android:layout_width="0dp" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameStackellipseten"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_60pxv"
+                android:layout_marginEnd="@dimen/_55pxh"
+                android:layout_width="@dimen/_60pxh" style="@style/groupStylepink_400cornerRadius">
+                <View
+                    android:background="@drawable/rectangle_bg_pink_401_radius_30"
+                    android:id="@+id/viewEllipseTen"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_60pxh" android:layout_width="@dimen/_60pxh"/>
+                <ImageView android:id="@+id/imageCamera"
+                    android:layout_gravity="bottom|center"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginBottom="@dimen/_14pxv"
+                    android:layout_marginEnd="@dimen/_16pxh"
+                    android:layout_marginStart="@dimen/_16pxh"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="@dimen/_28pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_camera_56x56"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_camera_56x56"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end" android:id="@+id/txtCmera"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_58pxh"
+                android:layout_marginStart="@dimen/_8pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{listellipsenineRowModel.txtCmera}"
+                style="@style/txtRobotomedium14_2" tools:text="@string/lbl_c_mera"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearGaleria"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_1pxv"
+            android:layout_weight="0.2" android:layout_width="0dp" android:orientation="vertical">
+            <FrameLayout android:id="@+id/frameStackellipseeleven"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_60pxv"
+                android:layout_width="@dimen/_60pxh" style="@style/groupStylepurple_400cornerRadius">
+                <View
+                    android:background="@drawable/rectangle_bg_purple_300_radius_30"
+                    android:id="@+id/viewEllipseEleven"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_60pxh" android:layout_width="@dimen/_60pxh"/>
+                <ImageView android:id="@+id/imageBookmark"
+                    android:layout_gravity="center"
+                    android:layout_height="@dimen/_24pxh"
+                    android:layout_marginHorizontal="@dimen/_18pxh"
+                    android:layout_marginVertical="@dimen/_18pxv"
+                    android:layout_width="@dimen/_24pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_bookmark_24x24"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_bookmark_24x24"/>
+            </FrameLayout>
+            <TextView android:ellipsize="end" android:gravity="end"
+                android:id="@+id/txtGaleria"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_6pxh"
+                android:layout_marginStart="@dimen/_9pxh"
+                android:layout_marginTop="@dimen/_13pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{listellipsenineRowModel.txtGaleria}"
+                style="@style/txtRobotomedium14_2" tools:text="@string/lbl_galeria"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

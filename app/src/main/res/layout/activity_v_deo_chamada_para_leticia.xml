@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="vDeoChamadaParaLeticiaVM" type="com.application.app.modules.vdeochamadaparaleticia.data.viewmodel.VDeoChamadaParaLeticiaVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameVdeoChamada"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <ImageView android:id="@+id/imageSmilingbeautif"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_smilingbeautif}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_smilingbeautif"/>
+        <LinearLayout android:id="@+id/linearColumncall"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStyleblack_900_66">
+            <androidx.appcompat.widget.Toolbar
+                android:gravity="center_horizontal"
+                android:id="@+id/toolbarToolbar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_44pxh"
+                android:layout_marginStart="@dimen/_44pxh"
+                android:layout_marginTop="@dimen/_44pxv"
+                android:layout_width="match_parent" app:contentInsetStart="0dp">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowcall"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageCall"
+                        android:layout_height="@dimen/_16pxh"
+                        android:layout_width="@dimen/_16pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_call"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_call"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtPrice"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2pxv"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_weight="0.93"
+                        android:layout_width="0dp"
+                        android:lineSpacingExtra="@dimen/_1pxh"
+                        android:singleLine="true"
+                        android:text="@{vDeoChamadaParaLeticiaVM.vDeoChamadaParaLeticiaModel.txtPrice}"
+                        style="@style/txtRobotomedium14" tools:text="@string/msg_chamada_de_v_de"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <ImageView android:id="@+id/imageLeticia"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_100pxh"
+                android:layout_marginEnd="@dimen/_44pxh"
+                android:layout_marginStart="@dimen/_44pxh"
+                android:layout_marginTop="@dimen/_36pxv"
+                android:layout_width="@dimen/_100pxh"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_avatarleticia}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_avatarleticia"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtLetcia"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_44pxh"
+                android:layout_marginStart="@dimen/_44pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="@{vDeoChamadaParaLeticiaVM.vDeoChamadaParaLeticiaModel.txtLetcia}"
+                style="@style/txtRobotolight36" tools:text="@string/lbl_let_cia"/>
+            <TextView android:ellipsize="end"
+                android:id="@+id/txtWhatsApp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_44pxh"
+                android:layout_marginStart="@dimen/_44pxh"
+                android:layout_marginTop="@dimen/_18pxv"
+                android:layout_width="wrap_content"
+                android:lineSpacingExtra="@dimen/_1pxh"
+                android:singleLine="true"
+                android:text="@{vDeoChamadaParaLeticiaVM.vDeoChamadaParaLeticiaModel.txtWhatsApp}"
+                style="@style/txtRobotomedium14" tools:text="@string/lbl_chamando"/>
+            <ImageButton
+                android:background="@drawable/rectangle_bg_red_a400_radius_36"
+                android:id="@+id/btnGroupSeventeen"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_72pxh"
+                android:layout_marginEnd="@dimen/_44pxh"
+                android:layout_marginStart="@dimen/_44pxh"
+                android:layout_marginTop="@dimen/_293pxv"
+                android:layout_width="@dimen/_72pxh"
+                android:paddingHorizontal="@dimen/_12pxh"
+                android:paddingVertical="@dimen/_12pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_callend" tools:ignore="ContentDescription"/>
+            <LinearLayout android:id="@+id/linearRowpartymode"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_50pxv"
+                android:layout_marginEnd="@dimen/_44pxh"
+                android:layout_marginStart="@dimen/_44pxh"
+                android:layout_marginTop="@dimen/_108pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <ImageView android:id="@+id/imagePartymode"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_width="@dimen/_28pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_partymode"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_partymode"/>
+                <ImageView android:id="@+id/imageVideocamoff"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginStart="@dimen/_120pxh"
+                    android:layout_width="@dimen/_28pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_videocamoff"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_videocamoff"/>
+                <ImageView android:id="@+id/imageCut"
+                    android:layout_height="@dimen/_28pxh"
+                    android:layout_marginStart="@dimen/_110pxh"
+                    android:layout_width="@dimen/_28pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_cut"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_cut"/>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.application.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.application.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <activity
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" android:name="com.facebook.FacebookActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true"
+            android:name="com.application.app.modules.touchhome3d.ui.TouchHome3dActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.application.app.modules.vdeochamadaparaleticia.ui.VDeoChamadaParaLeticiaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.enviodelocalizao.ui.EnvioDeLocalizaOActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.clipvoiceconversacomletcia.ui.ClipvoiceConversaComLetCiaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.appnavigation.ui.AppNavigationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.pushnotification.ui.PushNotificationActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.localizao.ui.LocalizaOActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.bubbletouchhome.ui.BubbleTouchHomeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.terceiraconversacomletcia.ui.TerceiraConversaComLetCiaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.vdeogravaoaposrejeio.ui.VDeoGravaOAposRejeiOActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.cancelamentodaligao.ui.CancelamentoDaLigaOActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.niciodavdeocapturade30s.ui.NicioDaVDeoCapturaDe30sActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.aberturadecmera.ui.AberturaDeCMeraActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.pushnotificationextendido.ui.PushNotificationExtendidoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.conversandocomletcia.ui.ConversandoComLetCiaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.contato3dtouch.ui.Contato3dTouchActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.ligaodeleticiarejeitada.ui.LigaODeLeticiaRejeitadaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.listadecontatos.ui.ListaDeContatosActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.application.app.modules.vdeogravao05s.ui.VDeoGravaO05sActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>

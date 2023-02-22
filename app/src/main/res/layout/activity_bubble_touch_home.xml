@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="bubbleTouchHomeVM" type="com.application.app.modules.bubbletouchhome.data.viewmodel.BubbleTouchHomeVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackscreenchange"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+        <FrameLayout android:id="@+id/frameBubbleTouchHo"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+            <ImageView android:id="@+id/imageScreenCHANGE"
+                android:layout_gravity="start"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_screenchange}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_screenchange"/>
+            <LinearLayout android:id="@+id/linearColumnyoutube"
+                android:layout_gravity="bottom|center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_57pxv"
+                android:layout_marginEnd="@dimen/_19pxh"
+                android:layout_marginStart="@dimen/_19pxh"
+                android:layout_marginTop="@dimen/_57pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:id="@+id/linearRowyoutube"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_14pxh"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageView android:id="@+id/imageYoutube"
+                        android:layout_height="@dimen/_48pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_width="@dimen/_48pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_youtube"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_youtube"/>
+                    <ImageView android:id="@+id/imageSettings"
+                        android:layout_height="@dimen/_47pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_48pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="@dimen/_48pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_settings_47x48"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_settings_47x48"/>
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_white_a700_radius_24"
+                        android:id="@+id/btnBookmark"
+                        android:layout_height="@dimen/_48pxh"
+                        android:layout_marginStart="@dimen/_48pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="@dimen/_48pxh"
+                        android:paddingHorizontal="@dimen/_9pxh"
+                        android:paddingVertical="@dimen/_9pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_bookmark" tools:ignore="ContentDescription"/>
+                    <ImageView android:id="@+id/imageMusic"
+                        android:layout_height="@dimen/_48pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_marginStart="@dimen/_51pxh"
+                        android:layout_width="@dimen/_42pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_music"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_music"/>
+                </LinearLayout>
+                <FrameLayout android:id="@+id/frameStackyoutubeOne"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_185pxv"
+                    android:layout_marginStart="@dimen/_4pxh"
+                    android:layout_marginTop="@dimen/_7pxv" android:layout_width="@dimen/_353pxh">
+                    <LinearLayout
+                        android:id="@+id/linearColumnyoutubeOne"
+                        android:layout_gravity="top|center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_2pxh"
+                        android:layout_marginTop="@dimen/_6pxv"
+                        android:layout_width="match_parent" android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/linearRowyoutubeOne"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_3pxh"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtYoutubeOne"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.27"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{bubbleTouchHomeVM.bubbleTouchHomeModel.txtYoutubeOne}"
+                                style="@style/txt_1" tools:text="@string/lbl_youtube"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtPinterest"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_42pxh"
+                                android:layout_weight="0.29"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{bubbleTouchHomeVM.bubbleTouchHomeModel.txtPinterest}"
+                                style="@style/txt_1" tools:text="@string/lbl_pinterest"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtNetflix"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_49pxh"
+                                android:layout_weight="0.21"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{bubbleTouchHomeVM.bubbleTouchHomeModel.txtNetflix}"
+                                style="@style/txt_1" tools:text="@string/lbl_netflix"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtTiktok"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_49pxh"
+                                android:layout_weight="0.23"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{bubbleTouchHomeVM.bubbleTouchHomeModel.txtTiktok}"
+                                style="@style/txt_1" tools:text="@string/lbl_tik_tok"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearRowdownload"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_3pxh"
+                            android:layout_marginTop="@dimen/_46pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <ImageView android:id="@+id/imageDownload"
+                                android:layout_height="@dimen/_36pxh"
+                                android:layout_marginBottom="@dimen/_5pxv"
+                                android:layout_marginTop="@dimen/_6pxv"
+                                android:layout_width="@dimen/_48pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_download"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_download"/>
+                            <ImageView android:id="@+id/imageGoogle"
+                                android:layout_height="@dimen/_48pxh"
+                                android:layout_marginStart="@dimen/_48pxh"
+                                android:layout_width="@dimen/_48pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_google"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_google"/>
+                            <ImageView
+                                android:id="@+id/imageGroupSixteen"
+                                android:layout_height="@dimen/_42pxh"
+                                android:layout_marginBottom="@dimen/_2pxv"
+                                android:layout_marginStart="@dimen/_48pxh"
+                                android:layout_marginTop="@dimen/_3pxv"
+                                android:layout_width="@dimen/_48pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_group16"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_group16"/>
+                            <ImageView android:id="@+id/imageComputer"
+                                android:layout_height="@dimen/_39pxh"
+                                android:layout_marginBottom="@dimen/_4pxv"
+                                android:layout_marginStart="@dimen/_48pxh"
+                                android:layout_marginTop="@dimen/_4pxv"
+                                android:layout_width="@dimen/_48pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_computer"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_computer"/>
+                        </LinearLayout>
+                        <LinearLayout android:id="@+id/linearRowgmail"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_10pxh"
+                            android:layout_marginStart="@dimen/_10pxh"
+                            android:layout_marginTop="@dimen/_18pxv"
+                            android:layout_width="match_parent" android:orientation="horizontal">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtGmail"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.22"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{bubbleTouchHomeVM.bubbleTouchHomeModel.txtGmail}"
+                                style="@style/txt_1" tools:text="@string/lbl_gmail"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtCalendario"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_45pxh"
+                                android:layout_weight="0.4"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{bubbleTouchHomeVM.bubbleTouchHomeModel.txtCalendario}"
+                                style="@style/txt_1" tools:text="@string/lbl_calend_rio"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtDrive"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_43pxh"
+                                android:layout_weight="0.19"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{bubbleTouchHomeVM.bubbleTouchHomeModel.txtDrive}"
+                                style="@style/txt_1" tools:text="@string/lbl_drive"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtMeet"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_61pxh"
+                                android:layout_weight="0.19"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{bubbleTouchHomeVM.bubbleTouchHomeModel.txtMeet}"
+                                style="@style/txt_1" tools:text="@string/lbl_meet"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <FrameLayout android:id="@+id/frameBubblenotifica"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_185pxv" android:layout_width="@dimen/_353pxh">
+                        <ImageView android:id="@+id/imageBubblenotifica"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_185pxh"
+                            android:layout_width="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_bubblenotifica"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_bubblenotifica"/>
+                        <LinearLayout
+                            android:id="@+id/linearColumnvideocamera"
+                            android:layout_gravity="top|start"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_10pxv"
+                            android:layout_width="match_parent" android:orientation="vertical">
+                            <LinearLayout
+                                android:id="@+id/linearRowvideocamera"
+                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal" style="@style/groupStylegray_100cornerRadius">
+                                <ImageView
+                                    android:id="@+id/imageVideocamera"
+                                    android:layout_height="@dimen/_9pxh"
+                                    android:layout_marginBottom="@dimen/_20pxv"
+                                    android:layout_marginStart="@dimen/_29pxh"
+                                    android:layout_marginTop="@dimen/_17pxv"
+                                    android:layout_width="@dimen/_14pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_videocamera_12x18"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_videocamera_12x18"/>
+                                <ImageView
+                                    android:id="@+id/imageIcontelefoneb"
+                                    android:layout_height="@dimen/_13pxh"
+                                    android:layout_marginBottom="@dimen/_18pxv"
+                                    android:layout_marginStart="@dimen/_54pxh"
+                                    android:layout_marginTop="@dimen/_15pxv"
+                                    android:layout_width="@dimen/_13pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_icontelefoneb"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_icontelefoneb"/>
+                                <ImageView android:id="@+id/imageCamera"
+                                    android:layout_height="@dimen/_14pxh"
+                                    android:layout_marginBottom="@dimen/_18pxv"
+                                    android:layout_marginStart="@dimen/_57pxh"
+                                    android:layout_marginTop="@dimen/_15pxv"
+                                    android:layout_width="@dimen/_16pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_camera_14x16"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_camera_14x16"/>
+                                <ImageView android:id="@+id/imageSignal"
+                                    android:layout_height="@dimen/_18pxh"
+                                    android:layout_marginBottom="@dimen/_14pxv"
+                                    android:layout_marginStart="@dimen/_62pxh"
+                                    android:layout_marginTop="@dimen/_14pxv"
+                                    android:layout_width="@dimen/_13pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_signal_18x13"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_signal_18x13"/>
+                                <ImageView android:id="@+id/imageSearch"
+                                    android:layout_height="@dimen/_17pxh"
+                                    android:layout_marginBottom="@dimen/_15pxv"
+                                    android:layout_marginEnd="@dimen/_20pxh"
+                                    android:layout_marginStart="@dimen/_51pxh"
+                                    android:layout_marginTop="@dimen/_14pxv"
+                                    android:layout_width="@dimen/_17pxh"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/img_search_17x17"
+                                    tools:ignore="ContentDescription" tools:src="@drawable/img_search_17x17"/>
+                            </LinearLayout>
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:gravity="center_horizontal"
+                                android:id="@+id/recyclerListgrouptwentynine"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/_4pxh"
+                                android:layout_marginStart="@dimen/_8pxh"
+                                android:layout_marginTop="@dimen/_21pxv"
+                                android:layout_width="match_parent"
+                                android:orientation="horizontal"
+                                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                                itemSpace="@{@dimen/_13pxh}"
+                                tools:itemCount="5" tools:listitem="@layout/row_listgrouptwentynine"/>
+                        </LinearLayout>
+                    </FrameLayout>
+                </FrameLayout>
+                <LinearLayout android:id="@+id/linearRowcall"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_12pxh"
+                    android:layout_marginStart="@dimen/_9pxh"
+                    android:layout_marginTop="@dimen/_7pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_green_a700_radius_24"
+                        android:id="@+id/btnCall"
+                        android:layout_height="@dimen/_48pxh"
+                        android:layout_width="@dimen/_48pxh"
+                        android:paddingHorizontal="@dimen/_8pxh"
+                        android:paddingVertical="@dimen/_8pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_call_48x48" tools:ignore="ContentDescription"/>
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_white_a700_radius_24"
+                        android:id="@+id/btnGroup597"
+                        android:layout_height="@dimen/_48pxh"
+                        android:layout_marginStart="@dimen/_48pxh"
+                        android:layout_width="@dimen/_48pxh"
+                        android:paddingHorizontal="@dimen/_8pxh"
+                        android:paddingVertical="@dimen/_8pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_group597" tools:ignore="ContentDescription"/>
+                    <ImageView android:id="@+id/imageFacebook"
+                        android:layout_height="@dimen/_48pxh"
+                        android:layout_marginStart="@dimen/_48pxh"
+                        android:layout_width="@dimen/_48pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_facebook"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_facebook"/>
+                    <ImageView android:id="@+id/imageGroup596"
+                        android:layout_height="@dimen/_48pxh"
+                        android:layout_marginStart="@dimen/_48pxh"
+                        android:layout_width="@dimen/_48pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_group596"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_group596"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRowwhatsapp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtWhatsApp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{bubbleTouchHomeVM.bubbleTouchHomeModel.txtWhatsApp}"
+                        style="@style/txt_1" tools:text="@string/lbl_whatsapp"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtInstagram"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_33pxh"
+                        android:layout_weight="0.25"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{bubbleTouchHomeVM.bubbleTouchHomeModel.txtInstagram}"
+                        style="@style/txt_1" tools:text="@string/lbl_instagram"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtFacebookOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_31pxh"
+                        android:layout_weight="0.24"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{bubbleTouchHomeVM.bubbleTouchHomeModel.txtFacebookOne}"
+                        style="@style/txt_1" tools:text="@string/lbl_facebook"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtMessenger"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_32pxh"
+                        android:layout_weight="0.27"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{bubbleTouchHomeVM.bubbleTouchHomeModel.txtMessenger}"
+                        style="@style/txt_1" tools:text="@string/lbl_messenger"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtGoogleOne"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_156pxh"
+                    android:layout_marginStart="@dimen/_156pxh"
+                    android:layout_marginTop="@dimen/_160pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{bubbleTouchHomeVM.bubbleTouchHomeModel.txtGoogleOne}"
+                    style="@style/txt_1" tools:text="@string/lbl_google"/>
+            </LinearLayout>
+        </FrameLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:backgroundTint="@color/white_A700"
+            android:id="@+id/floatingBtnFloatingactionbutton"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_85pxv"
+            android:layout_marginEnd="@dimen/_175pxh"
+            android:layout_marginStart="@dimen/_175pxh"
+            android:layout_marginTop="@dimen/_85pxv"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="@dimen/_48pxh"
+            app:srcCompat="@drawable/img_google_48x48" app:tint="@color/red_500"/>
+    </FrameLayout>
+</layout>

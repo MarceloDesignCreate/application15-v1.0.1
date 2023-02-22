@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listfile1RowModel" type="com.application.app.modules.navigationdrawersbottoncallleticia.data.model.Listfile1RowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRowfile"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageButton
+            android:background="@drawable/rectangle_bg_bluegray_600_radius_28"
+            android:id="@+id/btnFile"
+            android:layout_height="@dimen/_56pxh"
+            android:layout_width="@dimen/_56pxh"
+            android:paddingHorizontal="@dimen/_16pxh"
+            android:paddingVertical="@dimen/_16pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_file" tools:ignore="ContentDescription"/>
+        <ImageButton
+            android:background="@drawable/rectangle_bg_bluegray_600_radius_28"
+            android:id="@+id/btnCamera"
+            android:layout_height="@dimen/_56pxh"
+            android:layout_marginStart="@dimen/_43pxh"
+            android:layout_width="@dimen/_56pxh"
+            android:paddingHorizontal="@dimen/_15pxh"
+            android:paddingVertical="@dimen/_15pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_camera_56x56" tools:ignore="ContentDescription"/>
+        <ImageButton
+            android:background="@drawable/rectangle_bg_bluegray_600_radius_28"
+            android:id="@+id/btnUser"
+            android:layout_height="@dimen/_56pxh"
+            android:layout_marginStart="@dimen/_55pxh"
+            android:layout_width="@dimen/_56pxh"
+            android:paddingHorizontal="@dimen/_15pxh"
+            android:paddingVertical="@dimen/_15pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_user" tools:ignore="ContentDescription"/>
+        <ImageButton
+            android:background="@drawable/rectangle_bg_bluegray_600_radius_28"
+            android:id="@+id/btnCheckmark"
+            android:layout_height="@dimen/_56pxh"
+            android:layout_marginStart="@dimen/_38pxh"
+            android:layout_width="@dimen/_56pxh"
+            android:paddingHorizontal="@dimen/_18pxh"
+            android:paddingVertical="@dimen/_18pxv"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_checkmark_56x56" tools:ignore="ContentDescription"/>
+    </LinearLayout>
+</layout>

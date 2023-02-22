@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listtextviewanthonRowModel" type="com.application.app.modules.listadecontatos.data.model.ListtextviewanthonRowModel"/>
+    </data>
+    <LinearLayout android:id="@+id/linearRow"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" android:orientation="horizontal">
+        <ImageView android:id="@+id/imageImageviewAntho"
+            android:layout_height="@dimen/_52pxh"
+            android:layout_marginTop="@dimen/_1pxv"
+            android:layout_width="@dimen/_52pxh"
+            android:scaleType="centerCrop" circular="@{true}"
+            imageRes="@{@drawable/img_oval72}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_oval72"/>
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumntextviewanthon"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_5pxv"
+            android:layout_marginEnd="@dimen/_1pxh"
+            android:layout_marginStart="@dimen/_11pxh"
+            android:layout_weight="0.85" android:layout_width="0dp" android:orientation="vertical">
+            <LinearLayout android:id="@+id/linearRowtextviewanthon"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_1pxh"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTextviewanthon"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_weight="0.63"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{listtextviewanthonRowModel.txtTextviewanthon}"
+                    style="@style/txtRobotoromanmedium18_1" tools:text="@string/lbl_anthonny"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTime"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_9pxv"
+                    android:layout_marginStart="@dimen/_175pxh"
+                    android:layout_weight="0.37"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{listtextviewanthonRowModel.txtTime}"
+                    style="@style/txtRobotomedium12_1" tools:text="@string/lbl_9_04_am"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/linearRowtextviewconver"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_1pxh"
+                android:layout_marginTop="@dimen/_1pxv"
+                android:layout_width="match_parent" android:orientation="horizontal">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtTextviewconver"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_4pxv"
+                    android:layout_weight="0.9"
+                    android:layout_width="0dp" android:singleLine="true"
+                    android:text="@{listtextviewanthonRowModel.txtTextviewconver}"
+                    style="@style/txtRobotoregular16" tools:text="@string/msg_reuni_o_marcada"/>
+                <FrameLayout android:id="@+id/frameUnreadmessagea"
+                    android:layout_height="@dimen/_20pxv"
+                    android:layout_marginStart="@dimen/_86pxh"
+                    android:layout_marginTop="@dimen/_3pxv" android:layout_width="@dimen/_20pxh">
+                    <ImageView android:id="@+id/imageClose"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_20pxh"
+                        android:layout_width="@dimen/_20pxh"
+                        android:scaleType="centerCrop"
+                        circular="@{true}"
+                        imageRes="@{@drawable/img_close}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_close"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtThree"
+                        android:layout_gravity="top|end"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10pxv"
+                        android:layout_marginEnd="@dimen/_6pxh"
+                        android:layout_marginStart="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_3pxv"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="@{listtextviewanthonRowModel.txtThree}"
+                        style="@style/txtRobotomedium9" tools:text="@string/lbl_3"/>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

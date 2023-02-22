@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="videoChamadaEmGrupoBetterPriceVM" type="com.application.app.modules.videochamadaemgrupobetterprice.data.viewmodel.VideoChamadaEmGrupoBetterPriceVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackvector"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearColumn"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnvector"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylebluegray_900cornerRadius">
+                <ImageView android:id="@+id/imageVector"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_3pxh"
+                    android:layout_marginEnd="@dimen/_23pxh"
+                    android:layout_marginStart="@dimen/_23pxh"
+                    android:layout_marginTop="@dimen/_19pxv"
+                    android:layout_width="@dimen/_44pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_vector_gray_600"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector_gray_600"/>
+                <LinearLayout android:id="@+id/linearColumncalculator"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_17pxv"
+                    android:layout_marginEnd="@dimen/_18pxh"
+                    android:layout_marginStart="@dimen/_23pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowcalculator"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_16pxh"
+                        android:layout_marginStart="@dimen/_16pxh"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageCalculator"
+                            android:layout_height="@dimen/_21pxh"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_width="@dimen/_24pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_calculator"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_calculator"/>
+                        <ImageView android:id="@+id/imageMinimize"
+                            android:layout_height="@dimen/_24pxh"
+                            android:layout_marginStart="@dimen/_75pxh"
+                            android:layout_marginTop="@dimen/_1pxv"
+                            android:layout_width="@dimen/_24pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_minimize"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_minimize"/>
+                        <ImageView android:id="@+id/imageVectorOne"
+                            android:layout_height="@dimen/_23pxh"
+                            android:layout_marginBottom="@dimen/_1pxv"
+                            android:layout_marginStart="@dimen/_87pxh"
+                            android:layout_width="@dimen/_22pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_vector"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_vector"/>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:gravity="center_horizontal"
+                        android:id="@+id/recyclerListfile"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginTop="@dimen/_56pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        itemSpace="@{@dimen/_43pxh}" tools:itemCount="2" tools:listitem="@layout/row_listfile"/>
+                    <LinearLayout
+                        android:id="@+id/linearRowbetterprices"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_2pxh"
+                        android:layout_marginStart="@dimen/_3pxh"
+                        android:layout_marginTop="@dimen/_58pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtBetterPrices"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.53"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{videoChamadaEmGrupoBetterPriceVM.videoChamadaEmGrupoBetterPriceModel.txtBetterPrices}"
+                            style="@style/txtRobotoromanmedium18" tools:text="@string/lbl_better_prices"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtPessoasCounter"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_167pxh"
+                            android:layout_weight="0.47"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{videoChamadaEmGrupoBetterPriceVM.videoChamadaEmGrupoBetterPriceModel.txtPessoasCounter}"
+                            style="@style/txtRobotoregular18_1" tools:text="@string/lbl_60_pessoas"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearContactJunior"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_3pxh"
+                        android:layout_marginTop="@dimen/_38pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageThirtyOne"
+                            android:layout_height="@dimen/_46pxh"
+                            android:layout_width="@dimen/_46pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_31"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_31"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtJunior"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_12pxv"
+                            android:layout_marginStart="@dimen/_18pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_weight="0.53"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{videoChamadaEmGrupoBetterPriceVM.videoChamadaEmGrupoBetterPriceModel.txtJunior}"
+                            style="@style/txtRobotoregular18_2" tools:text="@string/lbl_junior"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearContactMyrella"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_3pxh"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageThirtyTwo"
+                            android:layout_height="@dimen/_46pxh"
+                            android:layout_width="@dimen/_46pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_32"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_32"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtMyrella"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_12pxv"
+                            android:layout_marginStart="@dimen/_18pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_weight="0.56"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{videoChamadaEmGrupoBetterPriceVM.videoChamadaEmGrupoBetterPriceModel.txtMyrella}"
+                            style="@style/txtRobotoregular18_2" tools:text="@string/lbl_myrella"/>
+                    </LinearLayout>
+                    <LinearLayout android:id="@+id/linearContactNayara"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_3pxh"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <LinearLayout
+                            android:id="@+id/linearRowthirtythree"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:layout_width="0dp" android:orientation="horizontal">
+                            <ImageView
+                                android:id="@+id/imageThirtyThree"
+                                android:layout_height="@dimen/_46pxh"
+                                android:layout_width="@dimen/_46pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_33"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_33"/>
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtNayara"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_12pxv"
+                                android:layout_marginStart="@dimen/_18pxh"
+                                android:layout_marginTop="@dimen/_13pxv"
+                                android:layout_weight="0.55"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="@{videoChamadaEmGrupoBetterPriceVM.videoChamadaEmGrupoBetterPriceModel.txtNayara}"
+                                style="@style/txtRobotoregular18_3" tools:text="@string/lbl_nayara"/>
+                        </LinearLayout>
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:ellipsize="end"
+                            android:gravity="center"
+                            android:id="@+id/btnChamar"
+                            android:layout_height="@dimen/_32pxv"
+                            android:layout_marginBottom="@dimen/_6pxv"
+                            android:layout_marginStart="@dimen/_165pxh"
+                            android:layout_marginTop="@dimen/_8pxv"
+                            android:layout_width="@dimen/_81pxh"
+                            android:paddingBottom="@dimen/_8pxv"
+                            android:paddingEnd="@dimen/_11pxh"
+                            android:paddingStart="@dimen/_11pxh"
+                            android:paddingTop="@dimen/_8pxv"
+                            android:singleLine="true"
+                            android:text="@string/lbl_chamar"
+                            android:textAllCaps="false"
+                            style="@style/btnSolidRounded_1" tools:text="@string/lbl_chamar"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearContactJessica"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_marginStart="@dimen/_3pxh"
+                        android:layout_marginTop="@dimen/_20pxv"
+                        android:layout_width="wrap_content" android:orientation="horizontal">
+                        <ImageView android:id="@+id/imageThirtyFour"
+                            android:layout_height="@dimen/_46pxh"
+                            android:layout_width="@dimen/_46pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_34"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_34"/>
+                        <TextView android:ellipsize="end"
+                            android:id="@+id/txtJessyca"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_12pxv"
+                            android:layout_marginStart="@dimen/_18pxh"
+                            android:layout_marginTop="@dimen/_13pxv"
+                            android:layout_weight="0.59"
+                            android:layout_width="0dp"
+                            android:singleLine="true"
+                            android:text="@{videoChamadaEmGrupoBetterPriceVM.videoChamadaEmGrupoBetterPriceModel.txtJessyca}"
+                            style="@style/txtRobotoregular18_2" tools:text="@string/lbl_jessyca"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:backgroundTint="@color/red_A400"
+            android:id="@+id/floatingBtnFloatingactionbutton"
+            android:layout_gravity="top|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_30pxv"
+            android:layout_marginEnd="@dimen/_28pxh"
+            android:layout_marginStart="@dimen/_28pxh"
+            android:layout_marginTop="@dimen/_30pxv"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="@dimen/_56pxh"
+            app:srcCompat="@drawable/img_callend" app:tint="@color/gray_302"/>
+    </FrameLayout>
+</layout>

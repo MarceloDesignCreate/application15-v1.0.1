@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="navigationDrawersBottonCallLeticiaVM" type="com.application.app.modules.navigationdrawersbottoncallleticia.data.viewmodel.NavigationDrawersBottonCallLeticiaVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackvector"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:id="@+id/linearColumn"
+            android:layout_gravity="start"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnvector"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStyleteal_801cornerRadius">
+                <ImageView android:id="@+id/imageVector"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_3pxh"
+                    android:layout_marginEnd="@dimen/_24pxh"
+                    android:layout_marginStart="@dimen/_24pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="@dimen/_44pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_vector_teal_400"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_vector_teal_400"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnvolume"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_24pxh"
+                    android:layout_marginStart="@dimen/_24pxh"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="match_parent" android:orientation="vertical">
+                    <LinearLayout android:gravity="start"
+                        android:id="@+id/linearRowvectorOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10pxh"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <LinearLayout android:id="@+id/linearRowvolume"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.86"
+                            android:layout_width="0dp" android:orientation="horizontal">
+                            <ImageButton
+                                android:background="@drawable/rectangle_bg_bluegray_600_radius_28"
+                                android:id="@+id/btnVolume"
+                                android:layout_height="@dimen/_56pxh"
+                                android:layout_width="@dimen/_56pxh"
+                                android:paddingHorizontal="@dimen/_15pxh"
+                                android:paddingVertical="@dimen/_15pxv"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/img_volume_56x56" tools:ignore="ContentDescription"/>
+                            <ImageView
+                                android:id="@+id/imageVideocamera"
+                                android:layout_height="@dimen/_16pxh"
+                                android:layout_marginBottom="@dimen/_19pxv"
+                                android:layout_marginStart="@dimen/_60pxh"
+                                android:layout_marginTop="@dimen/_21pxv"
+                                android:layout_width="@dimen/_24pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_videocamera_16x24"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_videocamera_16x24"/>
+                        </LinearLayout>
+                        <ImageView android:id="@+id/imageVectorOne"
+                            android:layout_height="@dimen/_23pxh"
+                            android:layout_marginBottom="@dimen/_15pxv"
+                            android:layout_marginStart="@dimen/_86pxh"
+                            android:layout_marginTop="@dimen/_16pxv"
+                            android:layout_width="@dimen/_22pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_vector"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_vector"/>
+                    </LinearLayout>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerListfile"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_43pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        itemSpace="@{@dimen/_43pxh}" tools:itemCount="2" tools:listitem="@layout/row_listfile1"/>
+                </LinearLayout>
+                <View android:background="@color/gray_400_70"
+                    android:id="@+id/lineRectangle"
+                    android:layout_height="@dimen/_1pxv"
+                    android:layout_marginTop="@dimen/_39pxv" android:layout_width="@dimen/_411pxh"/>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearPersonadd"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_53pxv"
+                    android:layout_marginEnd="@dimen/_27pxh"
+                    android:layout_marginStart="@dimen/_27pxh"
+                    android:layout_marginTop="@dimen/_23pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <ImageButton
+                        android:background="@drawable/rectangle_bg_teal_601_radius_28"
+                        android:id="@+id/btnVolumeOne"
+                        android:layout_height="@dimen/_56pxh"
+                        android:layout_width="@dimen/_56pxh"
+                        android:paddingHorizontal="@dimen/_15pxh"
+                        android:paddingVertical="@dimen/_15pxv"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_volume_1" tools:ignore="ContentDescription"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtAdicionarparti"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_25pxv"
+                        android:layout_marginStart="@dimen/_14pxh"
+                        android:layout_marginTop="@dimen/_10pxv"
+                        android:layout_weight="0.76"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{navigationDrawersBottonCallLeticiaVM.navigationDrawersBottonCallLeticiaModel.txtAdicionarparti}"
+                        style="@style/txtRobotoregular18_2" tools:text="@string/msg_adicionar_parti"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:backgroundTint="@color/red_A400"
+            android:id="@+id/floatingBtnFloatingactionbutton"
+            android:layout_gravity="top|end"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_43pxv"
+            android:layout_marginEnd="@dimen/_27pxh"
+            android:layout_marginStart="@dimen/_27pxh"
+            android:layout_marginTop="@dimen/_43pxv"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="@dimen/_56pxh"
+            app:srcCompat="@drawable/img_callend" app:tint="@color/gray_313"/>
+    </FrameLayout>
+</layout>
