@@ -35,6 +35,15 @@ Extended  menu
 ![Deck Funtions Meta Developer - menu extendido na  Call](https://user-images.githubusercontent.com/11893173/229388682-b4655a8a-410f-4d40-86af-1c92a7295276.png)
 
 
+# Tecnologias utilizadas
+
+## Back end
+- Java
+- Flutter
+
+## Front end
+- Figma
+- Adobe illustrator
 
 Built with AndroidX Support
 
@@ -103,3 +112,13 @@ Check your app\'s UI from the AppNavigation screens of your app.
   ├── resources          - Common classes for API
   └── RetrofitService.kt
 ```
+
+
+# Autor
+
+Agência Marcelo Design Create
+Marcelo Victor da Silva Nascimento
+
+https://www.linkedin.com/in/marcelovictornascimento/
+
+https://twitter.com/victormvsn23
