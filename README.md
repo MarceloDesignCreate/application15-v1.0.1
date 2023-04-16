@@ -11,15 +11,15 @@
 The application consists of improvements and updates of functions of the WhatsApp platform
 among which we can highlight:
 
-- 1. New functions in Call Rejected
-- 2. New functions in the extended call duration menu
-- 3. New functions in the extended menu during a group or individual video call
-- 4. Answering machine
-- 5. Push Notification
-- 6. 3D Touch contact
-- 7. 3D TouchHome
-- 8. E-commerce
-- 9. Event creation
+- . New functions in Call Rejected
+- . New functions in the extended call duration menu
+- . New functions in the extended menu during a group or individual video call
+- . Answering machine
+- . Push Notification
+- . 3D Touch contact
+- . 3D TouchHome
+- . E-commerce
+- . Event creation
 
 
 
