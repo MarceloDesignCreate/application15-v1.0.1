@@ -25,7 +25,7 @@ among which we can highlight:
 
 # Layout  mobile
 
-Answer machine
+New functions in the extended call duration menu
 
 ![Deck Funtions Meta Developer menu extendido na video conferencia](https://user-images.githubusercontent.com/11893173/229387878-86606cf7-54c8-4071-892f-1d8383ebde98.png)
 
@@ -40,7 +40,17 @@ New functions in Call Rejected
 ![Deck Funtions Meta Developer Ligação rejeitada](https://github.com/MarceloDesignCreate/application15-v1.0.1/assets/11893173/a873d01e-9b19-4db5-b196-3cbc971c193e)
 
 
+Push Notification
 
+![Deck Funtions Meta Developer notificação extendida](https://github.com/MarceloDesignCreate/application15-v1.0.1/assets/11893173/4ee7ec09-0a9a-42d1-8c86-07aa95255466)
+
+
+Answering machine
+
+![Deck Funtions Meta Developer - ansewer machine](https://github.com/MarceloDesignCreate/application15-v1.0.1/assets/11893173/efdd95d8-0492-43db-a673-252a872484c1)
+
+
+More....
 
 
 
