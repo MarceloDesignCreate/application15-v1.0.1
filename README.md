@@ -35,6 +35,15 @@ Extended  menu
 ![Deck Funtions Meta Developer - menu extendido na  Call](https://user-images.githubusercontent.com/11893173/229388682-b4655a8a-410f-4d40-86af-1c92a7295276.png)
 
 
+New functions in Call Rejected
+
+![Deck Funtions Meta Developer Ligação rejeitada](https://github.com/MarceloDesignCreate/application15-v1.0.1/assets/11893173/a873d01e-9b19-4db5-b196-3cbc971c193e)
+
+
+
+
+
+
 # Tecnologias utilizadas
 
 ## Back end
